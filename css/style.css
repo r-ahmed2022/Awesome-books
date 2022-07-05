@@ -14,7 +14,7 @@
 .navbar {
   border: 2px solid green;
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
 }
 
@@ -51,10 +51,6 @@
   background: #fff;
 }
 
-.book-info:nth-child(odd) {
-  background: lightgray;
-}
-
 .book-info {
   display: flex;
   flex-direction: row;
@@ -62,6 +58,10 @@
   align-items: center;
   border: 1px solid #000;
   padding: 5px;
+}
+
+.book-info:nth-child(odd) {
+  background: lightgray;
 }
 
 .add-books {
@@ -83,14 +83,14 @@
 }
 
 .form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .form .btn {
-    align-self: flex-end;
-    font-size: 18px;
-    padding: 5px 10px;
+  align-self: flex-end;
+  font-size: 18px;
+  padding: 5px 10px;
 }
