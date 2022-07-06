@@ -32,8 +32,7 @@ Clone the repositry and open the index.html which is in the folder.
 
 👤 **Riyaz Ahmed**
 - GitHub: [@r-ahmed2022](https://github.com/r-ahmed2022)
-- Twitter: [@](https://twitter.com/) 
-- LinkedIn: [@](https://www.linkedin.com/in/riyaz-ahmed)
+- LinkedIn: [](https://www.linkedin.com/in/riyaz-ahmed)
 
 ## Author 2
 
