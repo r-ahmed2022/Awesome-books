@@ -113,4 +113,14 @@
   .form .btn {
     align-self: center;
   }
+
+  .add-book {
+    width: 80%;
+    height: auto;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+  }
 }
