@@ -54,7 +54,8 @@ document.getElementById('form1').addEventListener('submit', (e) => {
     book.addBook(book);
     id += 1;
   }
-//  books.forEach((book) => showBookList(book));
+  title.value = '';
+  author.value = '';
 });
 
 const today = new Date();
