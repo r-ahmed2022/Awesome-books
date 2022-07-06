@@ -1,52 +1,68 @@
-# Awesome-books
-[https://r-ahmed2022.github.io/Awesome-books/]
-
+# Awesome_Books
+This is a simple website that display a list of books and allows you to add and remove books from that list.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
 ## Built With
 
-HTML
-CSS
-Javascript
 
-#### Getting Started
+- HTML
+- CSS
+- JavaScript
 
-Instructions on how to access my project locally. To Access my project locally please follow the following instructions;
+## Live Demo 
 
-Enter this url: https://github.com/r-ahmed2022/Awesome-books in your web browser.
-Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side.
-Select download Zip option from drop down menu.
 
-## Prerequisites
+[Live Demo Link](https://r-ahmed2022.github.io/Awesome-books/)
 
--> Setup GitHub repository
--> Install git
--> Setup Linters
-. Lighthouse
-. Weblint
-. Stylelint
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+You must have a browser and a git version installed on your device, and clone the repo from GitHub and use it.
+
+### Usage
+
+Clone the repositry and open the index.html which is in the folder.
 
 ## Author 1
-👤 Riyaz Ahmed
 
-GitHub: [https://github.com/r-ahmed2022/] 
-LinkedIn: [https://www.linkedin.com/in/riyaz-ahmed]
+👤 **Riyaz Ahmed**
+- GitHub: [@r-ahmed2022](https://github.com/r-ahmed2022)
+- Twitter: [@](https://twitter.com/) 
+- LinkedIn: [@](https://www.linkedin.com/in/riyaz-ahmed)
 
 ## Author 2
-👤 Faranosh Amini
-GitHub: [https://github.com/FaranoshAmini] 
-LinkedIn: [https://www.linkedin.com/in/FaranoshAmini]
 
-### Contributing
+👤 **Faranosh Amini**
+- GitHub: [@FaranoshAmini](https://github.com/FaranoshAmini)
+- Twitter: [@Faranosh_Amini](https://twitter.com/Faranosh_Amini) 
+- LinkedIn: [@Faranosh_Amini](https://www.linkedin.com/in/faranosh-amini-9b925b23a/)
 
-#### Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+
+
+## Show your support
+
 Give a ⭐️ if you like this project!
 
-# Acknowledgments
+## 🤝 Contributing
 
-## Microverse : 
-[https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md]
+Contributions, issues, and feature requests are welcome!
 
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used 🔰
+- Inspiration 💘
+- Microverse program ⚡
+- My standup team 🏹
+- My family's support 🙌
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
 
