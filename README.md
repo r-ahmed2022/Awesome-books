@@ -1,10 +1,13 @@
 # Awesome-books
 [https://r-ahmed2022.github.io/Awesome-books/]
 
+
+
 ## Built With
 
 HTML
 CSS
+Javascript
 
 #### Getting Started
 
@@ -23,13 +26,14 @@ Select download Zip option from drop down menu.
 . Weblint
 . Stylelint
 
-## Authors
+## Author 1
 👤 Riyaz Ahmed
-👤 Faranosh Amini
 
 GitHub: [https://github.com/r-ahmed2022/] 
 LinkedIn: [https://www.linkedin.com/in/riyaz-ahmed]
 
+## Author 2
+👤 Faranosh Amini
 GitHub: [https://github.com/FaranoshAmini] 
 LinkedIn: [https://www.linkedin.com/in/FaranoshAmini]
 
