@@ -1,77 +1,68 @@
-
-const books = [{}] ;
+const books = [{}];
 
 class Books {
-    
-    constructor(id, title, author) {
-     this.id = id;
-     this.title = title;
-     this.author = author;
-    }
+  constructor(id, title, author) {
+    this.id = id;
+    this.title = title;
+    this.author = author;
+  }
 
-    addBook(book) {
-        const booksDiv = document.getElementById('list');
-        const div = document.createElement('div');
-        div.setAttribute('class', 'book-info');
-        div.setAttribute('id', 'book-info');
-        booksDiv.append(div)
-        const title = document.createElement('h5');
-        title.setAttribute('class', 'title');
-        title.innerHTML = book.title;
-        div.append(title);
-        const author = document.createElement('p');
-        author.setAttribute('class', 'author');
-        author.innerHTML = book.author;
-        div.append(author);
-        const button = document.createElement('button');
-        button.setAttribute('class', 'removebook');
-        button.addEventListener('click', (e) =>
-        {  
-            e.stopPropagation();
-           const element =document.getElementById('book-info');
-           element.remove();
-        });
-        button.innerHTML = 'Remove';
-        div.append(button);
-    }
-}
-
-const showBookList = (book) => {
-   
+  // eslint-disable-next-line no-unused-vars
+  addBook(book) {
+    const booksDiv = document.getElementById('list');
+    const div = document.createElement('div');
+    div.setAttribute('class', 'book-info');
+    div.setAttribute('id', 'book-info');
+    booksDiv.append(div);
+    const title = document.createElement('h5');
+    title.setAttribute('class', 'title');
+    title.innerHTML = this.title;
+    div.append(title);
+    const author = document.createElement('p');
+    author.setAttribute('class', 'author');
+    author.innerHTML = this.author;
+    div.append(author);
+    const button = document.createElement('button');
+    button.setAttribute('class', 'removebook');
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const element = document.getElementById('book-info');
+      element.remove();
+    });
+    button.innerHTML = 'Remove';
+    div.append(button);
+  }
 }
 
 const title = document.getElementById('title');
 const author = document.getElementById('author');
-let id = 1 , bookname='', authorname='';
+let id = 1;
+let bookname = '';
+let authorname = '';
 function validateFields() {
   bookname = title.value;
   authorname = author.value;
-  if(bookname === '' || authorname === '')
-  return false;
-  else 
+  if (bookname === '' || authorname === '') { return false; }
   return true;
 }
 
-form1.addEventListener('submit', (e) => {
-    e.preventDefault();
-     if(validateFields())
-    {
-       let book = new Books(id ,bookname , authorname);
-       books.push(book);
-       book.addBook(book);
-       console.log(books);
-       id = id + 1;
-    }
-    books.forEach((book)=>showBookList(book));
-})
+document.getElementById('form1').addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (validateFields()) {
+    const book = new Books(id, bookname, authorname);
+    books.push(book);
+    book.addBook(book);
+    id += 1;
+  }
+//  books.forEach((book) => showBookList(book));
+});
 
+const today = new Date();
 
-var today = new Date();
+const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
 
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
 
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-var dateTime = date+' '+time;
+const dateTime = `${date} ${time}`;
 
 document.querySelector('.date-text').innerHTML = dateTime;
