@@ -1,5 +1,3 @@
-const books = [{}];
-
 class Books {
   constructor(id, title, author) {
     this.id = id;
@@ -7,8 +5,12 @@ class Books {
     this.author = author;
   }
 
-  // eslint-disable-next-line no-unused-vars
-  addBook(book) {
+     static books = [{}];
+}
+// eslint-disable-next-line no-unused-vars
+const showBookList = () => {
+  const storedList = JSON.parse(localStorage.getItem('book'));
+  storedList.forEach((book) => {
     const booksDiv = document.getElementById('list');
     const div = document.createElement('div');
     div.setAttribute('class', 'book-info');
@@ -16,11 +18,11 @@ class Books {
     booksDiv.append(div);
     const title = document.createElement('h5');
     title.setAttribute('class', 'title');
-    title.innerHTML = this.title;
+    title.innerHTML = book.title;
     div.append(title);
     const author = document.createElement('p');
     author.setAttribute('class', 'author');
-    author.innerHTML = this.author;
+    author.innerHTML = book.author;
     div.append(author);
     const button = document.createElement('button');
     button.setAttribute('class', 'removebook');
@@ -31,8 +33,8 @@ class Books {
     });
     button.innerHTML = 'Remove';
     div.append(button);
-  }
-}
+  });
+};
 
 const title = document.getElementById('title');
 const author = document.getElementById('author');
@@ -50,8 +52,8 @@ document.getElementById('form1').addEventListener('submit', (e) => {
   e.preventDefault();
   if (validateFields()) {
     const book = new Books(id, bookname, authorname);
-    books.push(book);
-    book.addBook(book);
+    Books.books.push(book);
+    localStorage.setItem('book', JSON.stringify(Books.books));
     id += 1;
   }
   title.value = '';
