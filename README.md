@@ -4,8 +4,6 @@ This is a simple website that display a list of books and allows you to add and 
 
 
 ## Built With
-
-
 - HTML
 - CSS
 - JavaScript
