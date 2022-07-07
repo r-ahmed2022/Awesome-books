@@ -8,6 +8,7 @@ class Books {
       const author = document.getElementById('author').value;
       this.booklist.push({ title: name, author });
       localStorage.setItem('books', JSON.stringify(this.booklist));
+      history.back();
       location.reload();
     }
 }
