@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable class-methods-use-this */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-restricted-globals */
 class Books {
@@ -11,6 +13,13 @@ class Books {
       history.back();
       location.reload();
     }
+
+    deleteBook(i) {
+      // eslint-disable-next-line no-use-before-define
+      this.booklist.splice(i, 1);
+      localStorage.setItem('books', JSON.stringify(this.booklist));
+      location.reload();
+    }
 }
 const book = new Books();
 
@@ -22,7 +31,7 @@ function showBookList() {
     book.booklist.push({ title: storedBook[i].title, author: storedBook[i].author });
     html += '<tr class="rows">';
     html += `<td> "${book.booklist[i].title}" by ${book.booklist[i].author}</td>`;
-    html += `<td class="test"><button onclick="deleteBook(${i})"> Remove </button> </td>`;
+    html += `<td class="test"><button onclick="book.deleteBook(${i})"> Remove </button> </td>`;
     html += '</tr>';
     document.getElementById('list').innerHTML = html;
   }
@@ -34,12 +43,6 @@ const button = document.getElementById('addbook');
 button.addEventListener('click', () => {
   book.addBooks();
 });
-
-function deleteBook(i) {
-  book.booklist.splice(i, 1);
-  localStorage.setItem('books', JSON.stringify(book.booklist));
-  location.reload();
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   showBookList();
