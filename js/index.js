@@ -31,7 +31,7 @@ function showBookList() {
     book.booklist.push({ title: storedBook[i].title, author: storedBook[i].author });
     html += '<tr class="rows">';
     html += `<td> "${book.booklist[i].title}" by ${book.booklist[i].author}</td>`;
-    html += `<td class="test"><button onclick="book.deleteBook(${i})"> Remove </button> </td>`;
+    html += `<td class="test"><button class="remove-btn" onclick="book.deleteBook(${i})"> Remove </button> </td>`;
     html += '</tr>';
     document.getElementById('list').innerHTML = html;
   }

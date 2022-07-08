@@ -1,34 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 900px;
-  width: 90%;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.header {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
+.container {
+  max-width: 960px;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .siteheader {
+  width: 80%;
+  position: fixed;
+  margin: 0 auto;
   display: flex;
   justify-content: stretch;
   align-items: center;
   border: 3px solid black;
-  margin: 10px;
+  padding: 0 10px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: auto;
-  margin-left: auto;
+  height: 100%;
+  margin: 0 0 0 auto;
 }
 
 .navbar > ul {
@@ -45,6 +50,10 @@ body {
   border-right: 2px solid #000;
 }
 
+.navbar > ul > li:hover {
+  font-weight: 700;
+}
+
 .nav-link {
   color: #000;
   text-decoration: none;
@@ -52,16 +61,32 @@ body {
   margin: auto;
 }
 
+.date {
+  position: relative;
+  top: 10px;
+  right: 0;
+  height: 20px;
+  margin: 0;
+  align-self: end;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 .list-section {
-  width: 96%;
+  width: 97%;
+  margin: 0 auto;
+  padding-top: 70px;
+  height: 100vh;
+  scroll-behavior: auto;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  margin-left: 25px;
 }
 
 .list {
-  width: 90%;
+  width: 100%;
+  height: auto;
   border: 2px solid #000;
   background: #fff;
 }
@@ -76,16 +101,25 @@ h2 {
 }
 
 .add-book {
-  width: 60%;
+  width: 100%;
+  height: 100vh;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
-  margin: auto;
+  align-items: center;
+}
+
+.contact {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 #form1 {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: stretch;
   align-items: center;
@@ -96,14 +130,16 @@ h2 {
   width: 100%;
   margin: 5px 0;
   padding: 10px;
-  border: 1px solid gray;
-  border-radius: 5px;
+  border: 1px solid #000;
+  border-radius: 2px;
 }
 
 #form1 > .btn {
   align-self: flex-end;
   font-size: 18px;
   padding: 5px 10px;
+  border: 2px solid #000;
+  box-shadow: 1px 1px 1px 1px #000;
 }
 
 table {
@@ -119,7 +155,8 @@ th {
 }
 
 td {
-  width: 500px;
+  width: 100%;
+  padding: 4px;
 }
 
 td.test {
@@ -136,29 +173,71 @@ tr:nth-child(even) {
   margin-right: auto;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  font-size: 20px;
+.remove-btn {
+  background: 0;
+  border: 2px solid #000;
+  box-shadow: 1px 1px 1px 1px #000;
+  margin: 2px;
 }
 
-/* .hidden {
-  display: none;
-} */
 .footer {
-  display: flex;
-  width: 90%;
-  margin: auto;
+  position: fixed;
+  bottom: 0;
+  width: 80%;
   align-items: center;
   margin-top: 50px;
   border: 3px solid black;
 }
 
 @media (max-width: 768px) {
+  .list-section,
+  .siteheader,
+  .add-book,
+  .contact {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .siteheader {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .siteheader > .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  .navbar > ul {
+    width: 100%;
+    align-self: center;
+  }
+
+  .navbar > ul > li {
+    margin: auto;
+    padding: 4px;
+    border: 0;
+    border-bottom: 0.5px solid #000;
+  }
+
+  .navbar > ul > li:hover {
+    font-weight: 700;
+  }
+
+  .date {
+    margin: 15px 4px;
+    font-size: 0.8rem;
+    align-self: flex-end;
+  }
+
   table {
     border: 1px solid #ddd;
     font-family: arial, sans-serif;
