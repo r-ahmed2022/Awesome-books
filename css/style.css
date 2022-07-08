@@ -86,8 +86,7 @@ body {
   justify-content: stretch;
   align-items: center;
   flex-direction: column;
-  }
-
+}
 
 #form1 input {
   width: 100%;
@@ -151,5 +150,4 @@ tr:nth-child(even) {
     padding: 10px 20px;
     align-self: center;
   }
-
 }
