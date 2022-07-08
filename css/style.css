@@ -8,6 +8,7 @@ body {
   max-width: 900px;
   width: 90%;
 }
+
 .header {
   width: 90%;
   height: auto;
@@ -144,11 +145,9 @@ tr:nth-child(even) {
   margin: auto;
   font-size: 20px;
 }
-
 /*.hidden {
   display: none;
 }*/
-
 .footer {
   display: flex;
   width: 90%;
