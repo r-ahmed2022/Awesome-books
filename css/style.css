@@ -8,8 +8,8 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 100%;
+.header {
+  width: 80%;
   height: auto;
   margin: 0 auto;
   box-shadow: 1px 1px 2px 4px lightgrey;
@@ -59,7 +59,7 @@ body {
 }
 
 .list {
-  width: 100%;
+  width: 90%;
   height: auto;
   margin: 20px 0;
   border: 2px solid #000;
@@ -71,23 +71,33 @@ body {
 }
 
 .add-book {
-  width: 40%;
+  width: 50%;
   height: auto;
   padding: 10px 20px;
   border: 2px solid #000;
   display: flex;
+  justify-content: center;
   margin: 10px;
   align-items: center;
 }
 
-.form input {
+#form1 {
   width: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form1 input {
+  width: 100%;
+  margin: 5px 0;
   padding: 10px;
   border: 1px solid gray;
   border-radius: 5px;
 }
 
-.form .btn {
+#form1 > .btn {
   align-self: flex-end;
   font-size: 18px;
   padding: 5px 10px;
@@ -97,7 +107,7 @@ table {
   border: 1px solid #ddd;
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 60%;
+  width: 90%;
 }
 
 td,
@@ -115,11 +125,30 @@ td.test {
 }
 
 tr:nth-child(even) {
-  background-color: rgb(255, 255, 255);
+  background-color: #ddd;
   color: black;
 }
 
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  table {
+    border: 1px solid #ddd;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #form1 {
+    width: 100%;
+    height: auto;
+  }
+
+  #form1 .btn {
+    padding: 10px 20px;
+    align-self: center;
+  }
 }
