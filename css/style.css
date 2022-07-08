@@ -9,10 +9,9 @@ body {
 }
 
 .header {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
-  box-shadow: 1px 1px 2px 4px lightgrey;
 }
 
 .siteheader {
@@ -20,8 +19,7 @@ body {
   justify-content: stretch;
   align-items: center;
   border: 3px solid black;
-  padding: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .navbar {
@@ -54,19 +52,23 @@ body {
 }
 
 .list-section {
-  width: 100%;
+  width: 96%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 25px;
 }
 
 .list {
   width: 90%;
   height: auto;
-  margin: 20px 0;
   border: 2px solid #000;
   background: #fff;
+}
+
+h2 {
+  padding: 20px;
 }
 
 .rows {
@@ -74,13 +76,12 @@ body {
 }
 
 .add-book {
-  width: 50%;
+  width: 60%;
   height: auto;
   padding: 10px 20px;
-  border: 2px solid #000;
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: auto;
   align-items: center;
 }
 
