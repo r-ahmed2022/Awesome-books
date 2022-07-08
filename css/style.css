@@ -1,12 +1,13 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+.container {
+  max-width: 900px;
+  width: 90%;
+}
 .header {
   width: 90%;
   height: auto;
@@ -52,7 +53,6 @@ body {
 
 .list-section {
   width: 96%;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,6 @@ body {
 
 .list {
   width: 90%;
-  height: auto;
   border: 2px solid #000;
   background: #fff;
 }
@@ -77,7 +76,6 @@ h2 {
 
 .add-book {
   width: 60%;
-  height: auto;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -117,7 +115,6 @@ table {
 td,
 th {
   text-align: left;
-  padding: 8px;
 }
 
 td {
@@ -146,19 +143,19 @@ tr:nth-child(even) {
   width: 80%;
   margin: auto;
   font-size: 20px;
-  border: 1px solid green;
 }
 
-.hidden {
+/*.hidden {
   display: none;
-}
+}*/
 
 .footer {
   display: flex;
-  justify-content: stretch;
+  width: 90%;
+  margin: auto;
   align-items: center;
+  margin-top: 50px;
   border: 3px solid black;
-  margin: 10px;
 }
 
 @media (max-width: 768px) {
