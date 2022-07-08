@@ -71,11 +71,12 @@ body {
 }
 
 .add-book {
-  width: 90%;
+  width: 50%;
   height: auto;
   padding: 10px 20px;
   border: 2px solid #000;
   display: flex;
+  justify-content: center;
   margin: 10px;
   align-items: center;
 }
