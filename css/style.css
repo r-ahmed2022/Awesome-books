@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -154,6 +153,13 @@ tr:nth-child(even) {
   display: none;
 }
 
+.footer {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border: 3px solid black;
+  margin: 10px;
+}
 
 @media (max-width: 768px) {
   table {
