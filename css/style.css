@@ -145,9 +145,10 @@ tr:nth-child(even) {
   margin: auto;
   font-size: 20px;
 }
-/*.hidden {
+
+/* .hidden {
   display: none;
-}*/
+} */
 .footer {
   display: flex;
   width: 90%;
