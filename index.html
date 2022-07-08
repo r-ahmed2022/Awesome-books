@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Awesome Books</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
-              rel="stylesheet">
-              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-            <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-   </head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="header">
-            <header class="siteheader">
-                <h2 class="logo">Awesome Books</h2>
-                    <nav class="navbar">
-                        <ul>
-                        <li><a class="nav-link" href="#">List</a></li> 
-                        <li><a class="nav-link" href="#">Add Book</a></li> 
-                        <li><a class="nav-link" href="#">Contacts</a></li> 
-                        </ul>
-                    </nav>
-            </header>
-    <section class="list-section">
-             <script>
-                document.write(new Date());
-             </script>
-         <h2 class="bookList">All Awesome Books</h2>
-            <div class="list" id="list">
-            </div>              
-       <div class="add-book">
-                <div id="form1">
-                    <h2>ADD NEW BOOKS</h2>
-                    <input type="text" placeholder="Title" id="title" class="form-title">
-                    <input type="text" placeholder="Author" id="author" class="form-author">
-                    <button class="btn btn-success my-3" id="addbook">Add Book</button>
-                </div>
-        </div>
-    </section> 
-</div>
+      <header class="siteheader">
+        <h2 class="logo">Awesome Books</h2>
+        <nav class="navbar">
+          <ul>
+            <li><a class="nav-link" href="#book-list">List</a></li>
+            <li><a class="nav-link" href="#add-book">Add Book</a></li>
+            <li><a class="nav-link" href="#contact">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <section class="list-section" id="book-list">
+      <script>
+        document.write(new Date());
+      </script>
+      <h2 class="bookList">All Awesome Books</h2>
+      <div class="list" id="list"></div>
+    </section>
+    <div class="add-book">
+      <div id="form1">
+        <h2>ADD NEW BOOKS</h2>
+        <input type="text" placeholder="Title" id="title" class="form-title" />
+        <input
+          type="text"
+          placeholder="Author"
+          id="author"
+          class="form-author"
+        />
+        <button class="btn btn-success my-3" id="addbook">Add Book</button>
+      </div>
+    </div>
+    <section class="contact"></section>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
